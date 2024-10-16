@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<HTML>
+    <head>
+        <title> Registeration Form </title>
+    </head>
+    <body>
+        <h1> REGISTERATION FORM </h1>
+        <form Method = "post" action= "URL" target= "_blank">
+            <label> ENTER NAME: </label> 
+                <input type = "text" id = "name" name = "name"/><br><br>
+
+            <label> AGE: </label>
+                <input type= "number" id="age" name="age"/><br><br>
+
+            <label> DOB: </label>
+                <input type="date" id="dob" name="dob"/><br><br>
+
+            <label> USERNAME: </label>
+                <input type="text" id="username" name="username"/><br><br>
+
+            <label> PASSWORD: </label>
+                <input type="password" id="password" name="password"/><br><br>
+                
+            <label> CONFIRM PASSWORD: </label>
+                <input type="password" id="confirm_password" name="confirm_password"/><br><br>
+
+            <label> EMAIL: </label>
+                <input type="email" id="email" name="email"/><br><br>
+
+            <label> PHONE NUMBER: </label>
+                <input type="number" id="phone" name="phone" pattern="[0-9]{10}"/><br><br>
+
+            <label> ADDRESS: </label><br><br>
+                <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <label>GENDER:</label><br>
+            <input type="radio" id="male" name="gender" value="M" required/>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="F"/>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other"/>
+            <label for="other">Other</label><br><br>
+
+            <label> QUALIFICATION: </label>
+                <select id="qualification" name="qualification">
+                    <option> SSLC </option>
+                    <option> PlusTwo </option>
+                    <option> Diploma </option>
+                    <option> Undergraduate </option>
+                    <option> Post Graduate </option>
+                </select><br><br>
+
+            <label>HOBBIES:</label><br>
+            <input type="checkbox" id="chess" name="hobbies" value="chess"/>
+            <label for="chess">Chess</label><br>
+            <input type="checkbox" id="cricket" name="hobbies" value="cricket"/>
+            <label for="cricket">Cricket</label><br>
+            <input type="checkbox" id="football" name="hobbies" value="football"/>
+            <label for="football">Football</label><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </body>
+</HTML>
